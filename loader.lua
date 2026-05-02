@@ -1,6 +1,6 @@
 --[[
-    ENVY UNIVERSAL LOADER (SILENT MODE)
-    Automatically detects the game, verifies key via Jnkie silently, and loads the script.
+    ENVY UNIVERSAL LOADER
+    Supports: Driving Empire, DDS, and Oil Empire.
 ]]
 
 local PlaceId = game.PlaceId
@@ -12,14 +12,15 @@ if not ScriptKey then
 end
 
 -- Game Mappings
-local targetScript = ""
 if PlaceId == 3351674303 or PlaceId == 4901815153 then -- Driving Empire
-    targetScript = "https://api.jnkie.com/api/v1/luascripts/public/62519ca922088c8b14de3119e243f7a419eef043a6cdc30184a16a96f1f32e11/download"
-else
-    warn("[ENVY] This game (" .. tostring(PlaceId) .. ") is not supported yet!")
-    return
-end
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/62519ca922088c8b14de3119e243f7a419eef043a6cdc30184a16a96f1f32e11/download"))()
 
--- Setup Silent Jnkie Loader
-getgenv().MAIN_SCRIPT_URL = targetScript
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hamaddddds/envyscript/main/jnkieloader.lua"))()
+elseif PlaceId == 131378148336503 then -- DDS
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/c5d362d6d9949216afa44bd6c765ddac95fcab11482049635ffb3d93a2412e00/download"))()
+
+elseif PlaceId == 107095834793267 then -- Oil Empire
+    -- Link script Oil Empire menyusul
+    warn("[ENVY] Oil Empire script coming soon!")
+else
+    warn("[ENVY] Game not supported! (ID: " .. tostring(PlaceId) .. ")")
+end
