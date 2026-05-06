@@ -1,6 +1,6 @@
 --[[
     ENVY UNIVERSAL LOADER
-    Supports: Driving Empire, DDS, and Oil Empire.
+    Supports: Driving Empire, DDS, and Kick ALB.
 ]]
 
 local PlaceId = game.PlaceId
@@ -18,9 +18,8 @@ if PlaceId == 3351674303 or PlaceId == 4901815153 then -- Driving Empire
 elseif PlaceId == 131378148336503 then -- DDS
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/c5d362d6d9949216afa44bd6c765ddac95fcab11482049635ffb3d93a2412e00/download"))()
 
-elseif PlaceId == 107095834793267 then -- Oil Empire
-    -- Link script Oil Empire menyusul
-    warn("[ENVY] Oil Empire script coming soon!")
+elseif PlaceId == 89469502395769 then -- Kick ALB
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/6ccb179ff34595f749f0853ea83b9710378e10d53a1ab6038e6bd9071d80b9c0/download"))()
 else
     warn("[ENVY] Game not supported! (ID: " .. tostring(PlaceId) .. ")")
 end
