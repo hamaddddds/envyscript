@@ -28,7 +28,5 @@ end
 if verifyKey() then
     if getgenv().MAIN_SCRIPT_URL then
         loadstring(game:HttpGet(getgenv().MAIN_SCRIPT_URL))()
-    else
-        print("[ENVY] Key is valid, but no MAIN_SCRIPT_URL defined.")
     end
 end

@@ -5,10 +5,8 @@ end
 getgenv().EnvyLoaded = true
 
 print("Game finded")
-for i = 1, 100 do
-    print("Executing : Loading... " .. i .. "/100")
-    if i % 20 == 0 then task.wait(0.1) end
-end
+print("Executing : Loading...")
+task.wait(0.5)
 
 local PlaceId = game.PlaceId
 local ScriptKey = getgenv().SCRIPT_KEY
