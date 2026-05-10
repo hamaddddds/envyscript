@@ -25,6 +25,9 @@ elseif PlaceId == 131378148336503 then -- DDS
 
 elseif PlaceId == 89469502395769 then -- Kick ALB
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/6ccb179ff34595f749f0853ea83b9710378e10d53a1ab6038e6bd9071d80b9c0/download"))()
+
+elseif PlaceId == 8356562067 then -- Indo Voice
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/71c2a27557c6a9c58a14c4c54d640e121b91cf1395c377ba95391c2011a591d7/download"))()
 else
     warn("[ENVY] Game not supported! (ID: " .. tostring(PlaceId) .. ")")
 end
