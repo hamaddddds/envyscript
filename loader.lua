@@ -28,6 +28,9 @@ elseif PlaceId == 89469502395769 then -- Kick ALB
 
 elseif PlaceId == 8356562067 then -- Indo Voice
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/71c2a27557c6a9c58a14c4c54d640e121b91cf1395c377ba95391c2011a591d7/download"))()
+
+elseif PlaceId == 6911148748 then -- Luarmor Loader Game
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/d878315dcdabb13eb31727b7c1cf521a480fc5a60d29de01a82cc777107a2a90/download"))()
 else
     warn("[ENVY] Game not supported! (ID: " .. tostring(PlaceId) .. ")")
 end
